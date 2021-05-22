@@ -76,3 +76,15 @@ body {
     }
   }
 }
+
+@media screen and (max-width: "800px") {
+  .background {
+    display: none;
+  }
+
+  .mobile-message {
+    display: block;
+    font-size: 2rem;
+    color: rebeccapurple;
+  }
+}
