@@ -1,1 +1,78 @@
+// css reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+// mixin
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  cursor: url(../img/cursor.png), default;
+  background-color: #97ca52;
+  height: 100vh;
+  @include flex-center();
+  user-select: none;
+}
+
+// main section
+.background {
+  background: url(../img/background.png) no-repeat;
+  width: 1920px;
+  height: 1080px;
+  @include flex-center();
+  flex-flow: row wrap;
+}
+
+.hole-container {
+  width: 25%;
+  @include flex-center();
+
+  .mole {
+    position: relative;
+    right: 30px;
+  }
+}
+
+.hole {
+  border-radius: 50%;
+  background: black;
+  width: 267px;
+  height: 267px;
+}
+
+.hungry {
+  cursor: url(../img/cursor-worm.png), default;
+}
+
+.win h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: red;
+  padding: 1rem;
+}
+
+.gone,
+.hide {
+  display: none;
+}
+
+.worm-box {
+  width: 1660px;
+
+  .worm-container {
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+
+    .worm {
+      width: 1660px;
+    }
+  }
+}

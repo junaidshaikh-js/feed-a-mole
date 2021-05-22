@@ -1,1 +1,76 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  cursor: url(../img/cursor.png), default;
+  background-color: #97ca52;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.background {
+  background: url(../img/background.png) no-repeat;
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.hole-container {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hole-container .mole {
+  position: relative;
+  right: 30px;
+}
+
+.hole {
+  border-radius: 50%;
+  background: black;
+  width: 267px;
+  height: 267px;
+}
+
+.hungry {
+  cursor: url(../img/cursor-worm.png), default;
+}
+
+.win h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: red;
+  padding: 1rem;
+}
+
+.gone,
+.hide {
+  display: none;
+}
+
+.worm-box {
+  width: 1660px;
+}
+
+.worm-box .worm-container {
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+}
+
+.worm-box .worm-container .worm {
+  width: 1660px;
+}
+/*# sourceMappingURL=index.css.map */
